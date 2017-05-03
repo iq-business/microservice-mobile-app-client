@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Gateway</key>
+	<array>
+		<string>http://localhost:9090/api/coffee</string>
+		<string>http://localhost:9090/api/tea</string>
+	</array>
+</dict>
+</plist>

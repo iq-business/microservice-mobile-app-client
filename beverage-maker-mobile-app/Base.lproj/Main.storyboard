@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="beverage_maker_mobile_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="NZG-uM-9An">
+                                <rect key="frame" x="88" y="12" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="AGS-k7-D3P"/>
+                                    <constraint firstAttribute="width" constant="200" id="nhi-Bi-6DD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Footer" translatesAutoresizingMaskIntoConstraints="NO" id="L0E-k9-FOM">
+                                <rect key="frame" x="35" y="617" width="306" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="AiM-gG-i1g"/>
+                                    <constraint firstAttribute="height" constant="30" id="qmi-fw-ven"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="82" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LE1-o1-I5K">
+                                <rect key="frame" x="16" y="220" width="343" height="389"/>
+                                <color key="backgroundColor" red="0.086260028180000003" green="0.086282856759999998" blue="0.086258567869999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.086260028180000003" green="0.086282856759999998" blue="0.086258567869999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BeverageCell" rowHeight="82" id="YZN-QL-geY" customClass="BerverageInformationViewCell" customModule="beverage_maker_mobile_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YZN-QL-geY" id="A7V-y7-kul">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="82"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBb-0I-Vjq">
+                                                    <rect key="frame" x="8" y="8" width="59" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swU-p4-gaT">
+                                                    <rect key="frame" x="8" y="39" width="88" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMq-eN-9Iu">
+                                                    <rect key="frame" x="272" y="24" width="63" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="VlX-LD-djV">
+                                                    <rect key="frame" x="161" y="31" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.086260028183460236" green="0.08628285676240921" blue="0.086258567869663239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="topMargin" secondItem="TBb-0I-Vjq" secondAttribute="top" id="2KY-fc-afh"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PMq-eN-9Iu" secondAttribute="trailing" id="7E5-oq-sed"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="swU-p4-gaT" secondAttribute="bottom" constant="14" id="8xg-4v-EXy"/>
+                                                <constraint firstItem="PMq-eN-9Iu" firstAttribute="centerY" secondItem="A7V-y7-kul" secondAttribute="centerY" id="AUY-1o-Ib7"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="TBb-0I-Vjq" secondAttribute="leading" id="PmB-g9-SfH"/>
+                                                <constraint firstItem="VlX-LD-djV" firstAttribute="centerX" secondItem="A7V-y7-kul" secondAttribute="centerX" id="RvA-SH-2Bc"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="swU-p4-gaT" secondAttribute="leading" id="kQI-0L-RTn"/>
+                                                <constraint firstItem="VlX-LD-djV" firstAttribute="centerY" secondItem="A7V-y7-kul" secondAttribute="centerY" id="oEc-lF-kwg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="berverageDescription" destination="swU-p4-gaT" id="zdb-rq-6VF"/>
+                                            <outlet property="berverageName" destination="TBb-0I-Vjq" id="5i3-eC-WK4"/>
+                                            <outlet property="berveragePrice" destination="PMq-eN-9Iu" id="pyd-vb-l6z"/>
+                                            <outlet property="loadingIndicator" destination="VlX-LD-djV" id="fqb-J5-vfx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cDW-sh-A5C"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vhW-Wa-3zP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094102360308170319" green="0.09412645548582077" blue="0.094100810587406158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NZG-uM-9An" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5cQ-JC-wo4"/>
+                            <constraint firstItem="L0E-k9-FOM" firstAttribute="top" secondItem="LE1-o1-I5K" secondAttribute="bottom" constant="8" id="BIw-u0-WuX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LE1-o1-I5K" secondAttribute="trailing" id="DmH-1C-LJE"/>
+                            <constraint firstItem="L0E-k9-FOM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M5P-gs-DjR"/>
+                            <constraint firstItem="NZG-uM-9An" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-8" id="QfD-eZ-dqL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L0E-k9-FOM" secondAttribute="bottom" constant="20" id="agJ-7S-Z73"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="LE1-o1-I5K" secondAttribute="leading" id="cij-1g-dmt"/>
+                            <constraint firstItem="LE1-o1-I5K" firstAttribute="top" secondItem="NZG-uM-9An" secondAttribute="bottom" constant="8" id="e16-11-R7l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menu" destination="LE1-o1-I5K" id="8g4-Sa-GXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Footer" width="408" height="40"/>
+        <image name="Header" width="280" height="289"/>
+    </resources>
+</document>
