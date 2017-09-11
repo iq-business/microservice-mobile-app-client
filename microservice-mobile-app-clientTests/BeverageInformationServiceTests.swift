@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import beverage_maker_mobile_app
+@testable import microservice_mobile_app_client
 
 class BeverageInformationServiceTests: XCTestCase {
     
@@ -16,8 +16,8 @@ class BeverageInformationServiceTests: XCTestCase {
     override func setUp() {
         super.setUp()
         //service = MockedBeverageInformationService()
-        //service = NetworkBeverageInformationService(endPoint: "http://localhost/~gerarddejong/beverage-maker/coffee.json")
-        service = NetworkBeverageInformationService(endPoint: "http://45.32.233.9:9191/api/beverage?type=tea")
+        service = NetworkBeverageInformationService(endPoint: "http://localhost/~gerarddejong/beverage-maker/coffee.json")
+        //service = NetworkBeverageInformationService(endPoint: "http://45.32.233.9:9191/api/beverage?type=tea")
     }
     
     override func tearDown() {
